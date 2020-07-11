@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Svastha Bharat</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="{{logo1}}" width="140" height="90">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Know More About Corona
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/symptoms">Corona Symptoms</a>
+          <a class="dropdown-item" href="/pre">Precaution</a>
+          <a class="dropdown-item" href="/covid">Diffrence between Flu and Corona</a>
+          <a class="dropdown-item" href="/table">Live Info About Covid-19</a>
+        </div>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<style>
+nav{
+position:fixed;
+}
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400, 500, 300, 700);
+body {
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: "Roboto", sans-serif;
+}
+.symptoms{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding-top: 300Px;
+    padding-right: 15px;
+    padding-left: -49px;
+    margin-top: 16px;
+}
+.symptoms p{
+    font-family:cursive;
+    font-size: 39px;
+    margin-left: -165px;
+    padding-right: 5px;
+    color: white;
+    
+}
+.content{
+    position: absolute;
+    width: 930px;
+    min-height: 500px;
+    height: auto;
+    /*background-color: darksalmon;*/
+    right: 0;
+    top:62%;}
+img {
+  opacity: 0.7;
+
+}
+h1{
+font-family:cursive;
+    font-size: 45px;
+color: white;
+top:62%;}
+
+</style>
+<div class="container">
+  <h2 class="text-center mt-3">Corona Virus Probability Detector </h2>
+  <form action="/" method="POST">
+  <div class="form-group">
+    <label for="fever">Enter fever Value</label>
+    <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter fever value">
+  </div>
+  <div class="form-group">
+    <label for="age">Enter Your Age</label>
+    <input type="text" class="form-control" id="age" name="age" placeholder="Enter Your Age">
+  </div>
+  <div class="form-group">
+    <label for="bodyPain">Body Pain</label>
+    <select class="form-control" id="bodyPain" name="bodyPain">
+      <option value="0">No Pain</option>
+      <option value="1">Severe Pain</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="runnyNose">Runny Nose</label>
+    <select class="form-control" id="runnyNose" name="runnyNose">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+    </div>
+  <div class="form-group">
+    <label for="diffBreath">Difficulty In Breath</label>
+    <select class="form-control" id="diffBreath" name="diffBreath">
+      <option value="-1">No Difficulty</option>
+      <option value="0">Medium Difficulty</option>
+      <option value="1">Severe Difficulty</option>
+    </select>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
